@@ -9,9 +9,10 @@ def progression():
     progression = " "
     right_answer = start + (random - 1) * step
     for i in range(progression_lenght):
-        x = start + i * step
-        progression = progression + f'{str(x)}' + " "
-    question = progression.replace(f'{str(right_answer)} ', " .. ")
+        result = start + i * step
+        progression = progression + f'{str(result)}' + " "
+    question = progression.replace(f' {str(right_answer)} ', " .. ")
+    question = question.strip()
     return question, right_answer
 
 
