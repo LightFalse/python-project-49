@@ -16,7 +16,8 @@ def game(name_game, rules):
             counter += 1
             print("Correct!")
         else:
-            print(f" '{us_ans}' is wrong answer ;(. Correct answer was '{ans}'. \n Let's try again, {name}! ")
+            print(f" '{us_ans}' is wrong answer ;(. Correct answer was '{ans}'".)
+            print(f"Let's try again, {name}! ")
             return counter
     if counter == 3:
         print(f"Congratulations, {name}!")
