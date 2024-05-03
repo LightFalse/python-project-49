@@ -2,8 +2,8 @@ import random
 
 
 def prime():
-    question=random.randint(2, 101)
-    i = 2 
+    question = random.randint(2, 101)
+    i = 2
     right_answer = "no"
     while question % i != 0:
         i += 1
@@ -11,7 +11,7 @@ def prime():
             right_answer = "yes"
         else:
             continue
-    return  question, right_answer  
+    return question, right_answer
 
 
 def rules():
@@ -20,4 +20,4 @@ def rules():
 
 
 if __name__ == "__main__":
-    even()
+    prime()
