@@ -1,9 +1,6 @@
 import random
 
 
-
-
-
 def calc():
     random_num1 = random.randint(1, 100)
     random_num2 = random.randint (1, 100)
@@ -14,7 +11,7 @@ def calc():
 
 
 def rules():
-    rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+    rules = 'What is the result of the expression?'
     return rules
 
 
