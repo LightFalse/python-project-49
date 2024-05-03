@@ -11,7 +11,7 @@ def progression():
     for i in range(progression_lenght):
         x = start + i * step
         progression = progression + f'{str(x)}' + " "
-    question = progression.replace(f' {str(right_answer)} ', " .. ")
+    question = progression.replace(f'{str(right_answer)} ', " .. ")
     return question, right_answer
 
 
