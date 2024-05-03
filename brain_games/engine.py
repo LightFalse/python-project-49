@@ -2,11 +2,15 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def game(question, right_answer):
+def game(name_game, rules):
+    rules= rules()
     name = welcome_user()
     counter = 0
+
+    print(rules)
     while counter < 3:
-        print(question) 
+        question, right_answer = name_game()
+        print(question)
         player_answer= prompt.string("Your answer:")
         if right_answer == int(player_answer): 
             counter += 1
