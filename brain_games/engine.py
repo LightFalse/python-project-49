@@ -12,7 +12,7 @@ def game(name_game, rules):
         question, ans = name_game()
         print("Question:", question)
         us_ans = prompt.string("Your answer:")
-        if str(ans) == us_ansr:
+        if str(ans) == us_ans:
             counter += 1
             print("Correct!")
         else:
