@@ -16,11 +16,7 @@ def game(name_game, rules):
             counter += 1
             print("Correct!")
         else:
-<<<<<<< HEAD
-            print(f" '{us_ans}' is wrong answer ;(. Correct answer was '{ans}'.")
-=======
-            print(f" '{us_ans}' is wrong answer ;(. Correct answer was '{ans}'")
->>>>>>> parent of 43f9768 (Delete brain_games/engine.py)
+            print(f"'{us_ans}' is wrong answer ;(. Correct answer was '{ans}'")
             print(f"Let's try again, {name}! ")
             return counter
     if counter == 3:

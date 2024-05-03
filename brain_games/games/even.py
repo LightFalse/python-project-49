@@ -14,7 +14,3 @@ def even():
 def rules():
     rules = 'Answer "yes" if the number is even, otherwise answer "no".'
     return rules
-
-
-if __name__ == "__main__":
-    even()

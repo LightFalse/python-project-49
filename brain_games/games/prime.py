@@ -17,7 +17,3 @@ def prime():
 def rules():
     rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     return rules
-
-
-if __name__ == "__main__":
-    prime()

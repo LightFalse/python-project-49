@@ -19,7 +19,3 @@ def progression():
 def rules():
     rules = 'What number is missing in the progression?'
     return rules
-
-
-if __name__ == "__main__":
-    progression()

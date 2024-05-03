@@ -13,7 +13,3 @@ def gcd():
 def rules():
     rules = 'Find the greatest common divisor of given numbers.'
     return rules
-
-
-if __name__ == "__main__":
-    gcd()
