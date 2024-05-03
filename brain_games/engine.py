@@ -9,14 +9,14 @@ def game(name_game, rules):
 
     print(rules)
     while counter < 3:
-        question, right_answer = name_game()
+        question, ans = name_game()
         print("Question:", question)
-        player_answer = prompt.string("Your answer:")
-        if str(right_answer) == player_answer:
+        us_ans = prompt.string("Your answer:")
+        if str(ans) == us_ansr:
             counter += 1
             print("Correct!")
         else:
-            print(f" '{player_answer}' is wrong answer ;(. Correct answer was '{right_answer}'. \n Let's try again, {name}! ")
+            print(f" '{us_ans}' is wrong answer ;(. Correct answer was '{ans}'. \n Let's try again, {name}! ")
             return counter
     if counter == 3:
         print(f"Congratulations, {name}!")
