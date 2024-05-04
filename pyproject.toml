@@ -1,13 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Brain Games with  numbers"
 authors = ["LightFalse <Danoneover9999@gmail.com>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
-
+classifiers = [
+    "Topic :: Programming Language :: Python :: 3.10"
+]
+repository = "https://github.com/LightFalse/python-project-49"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:welcome"
