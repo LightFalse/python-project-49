@@ -1,7 +1,9 @@
 import random
 
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-def even():
+
+def generate_round():
     random_num = random.randint(1, 100)
     question = random_num
     if random_num % 2 == 0:
@@ -9,8 +11,3 @@ def even():
     else:
         right_answer = str("no")
     return question, right_answer
-
-
-def rules():
-    rules = 'Answer "yes" if the number is even, otherwise answer "no".'
-    return rules

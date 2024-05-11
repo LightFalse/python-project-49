@@ -1,7 +1,9 @@
 from random import randint
 
+RULES = 'What number is missing in the progression?'
 
-def progression():
+
+def generate_round():
     progression_lenght = randint(5, 10)
     start = randint(1, 10)
     step = randint(3, 15)
@@ -14,8 +16,3 @@ def progression():
     question = progression.replace(f' {str(right_answer)} ', " .. ")
     question = question.strip()
     return question, right_answer
-
-
-def rules():
-    rules = 'What number is missing in the progression?'
-    return rules

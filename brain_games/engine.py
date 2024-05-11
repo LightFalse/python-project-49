@@ -2,14 +2,15 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def game(name_game, rules):
-    rules = rules()
+def game(generate_options):
+    rules = generate_options.RULES
     name = welcome_user()
     counter = 0
+    MAX_ROUND = 3
 
     print(rules)
-    while counter < 3:
-        question, ans = name_game()
+    while counter < MAX_ROUND:
+        question, ans = generate_options.generate_round()
         print("Question:", question)
         us_ans = prompt.string("Your answer:")
         if str(ans) == us_ans:
@@ -21,7 +22,3 @@ def game(name_game, rules):
             return counter
     if counter == 3:
         print(f"Congratulations, {name}!")
-
-
-if __name__ == "__main__":
-    game()
